@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAFFRON — Modern Bistro</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,
+400;0,700;0,900;1,400;1,700&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sctyle.css">
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">SAFFRON <span>Bistro</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#specials">Specials</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('reservation').
+        scrollIntoView({behavior:'smooth'})">Reserve a Table</button>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#menu" onclick="closeMenu()">Menu</a>
+  <a href="#specials" onclick="closeMenu()">Specials</a>
+  <a href="#gallery" onclick="closeMenu()">Gallery</a>
+  <a href="#reservation" onclick="closeMenu()">Reserve</a>
+</div>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <div class="hero-eyebrow">Est. 2018 &mdash; Fine Dining</div>
+    <h1 class="hero-title">Where Flavour<br><em>Tells a Story</em></h1>
+
+    <p class="hero-sub">A contemporary bistro where global spices meet honest craft. 
+      Every dish is a journey through texture, warmth, and memory.</p>
+
+    <div class="hero-actions">
+      <a href="#menu" class="btn-primary">Explore Menu</a>
+      <a href="#reservation" class="btn-ghost">Book a Table</a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="stat-num">48+</div><div class="stat-label">Dishes</div></div>
+      <div><div class="stat-num">12K</div><div class="stat-label">Guests Served</div></div>
+      <div><div class="stat-num">4.9&#9733;</div><div class="stat-label">Rating</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img class="hero-img-main" src="images/pexels-suzyhazelwood-2966196.jpg" alt="Signature Schnitzel Plate">
+    <div class="hero-img-overlay"></div>
+    <div class="hero-badge">
+      <div class="hero-badge-inner">&#9733;&#9733;&#9733;</div>
+      <div class="hero-badge-sub">Award Winner</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MARQUEE ── -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item">Schnitzel &amp; Frites <span>&#10022;</span></span>
+    <span class="marquee-item">Spinach Lasagna <span>&#10022;</span></span>
+    <span class="marquee-item">Artisan Spice Blends <span>&#10022;</span></span>
+    <span class="marquee-item">Glass Noodle Bowl <span>&#10022;</span></span>
+    <span class="marquee-item">Craft Burgers <span>&#10022;</span></span>
+    <span class="marquee-item">Seasonal Tasting Menu <span>&#10022;</span></span>
+    <span class="marquee-item">Schnitzel &amp; Frites <span>&#10022;</span></span>
+    <span class="marquee-item">Spinach Lasagna <span>&#10022;</span></span>
+    <span class="marquee-item">Artisan Spice Blends <span>&#10022;</span></span>
+    <span class="marquee-item">Glass Noodle Bowl <span>&#10022;</span></span>
+    <span class="marquee-item">Craft Burgers <span>&#10022;</span></span>
+    <span class="marquee-item">Seasonal Tasting Menu <span>&#10022;</span></span>
+  </div>
+</div>
+
+<!-- ── ABOUT ── -->
+<section class="about reveal" id="about">
+  <div class="about-images">
+    <img class="about-img-1" src="images/artisan" alt="Artisan Spices">
+    <img class="about-img-2" src="images/spinnach" alt="Spinach Lasagna">
+    <div class="about-accent"></div>
+  </div>
+  <div class="about-text">
+    <div class="section-label">Our Philosophy</div>
+    <h2 class="section-title">Craft, Warmth,<br><em>&amp; Provenance</em></h2>
+
+    <p>At Saffron Bistro, we believe the best meals begin long before the kitchen.
+       We source our spices from heritage farms, our produce from local growers, and our inspiration 
+       from the globe's most storied culinary traditions.</p>
+
+
+    <p>Every dish is a collaboration between land, tradition, and the chef's own 
+      voice — bold enough to surprise you, familiar enough to feel like home.</p>
+
+
+    <div class="about-features">
+      <div class="about-feature"><div class="about-feature-icon">&#127807;</div><div>
+        <div class="about-feature-title">Farm-to-Table</div><div class="about-feature-desc">Daily sourcing within 80 km</div></div></div>
+      <div class="about-feature"><div class="about-feature-icon">&#128293;</div><div>
+
+        <div class="about-feature-title">Open Kitchen</div><div class="about-feature-desc">Watch the craft, smell the story</div></div></div>
+      <div class="about-feature"><div class="about-feature-icon">&#129337;</div><div>
+
+        <div class="about-feature-title">House-Ground Spices</div><div class="about-feature-desc">Blended fresh every morning</div></div></div>
+      <div class="about-feature"><div class="about-feature-icon">&#127863;</div><div>
+
+        <div class="about-feature-title">Natural Wine List</div><div class="about-feature-desc">50+ biodynamic bottles</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── MENU ── -->
+<section class="menu-section reveal" id="menu">
+  <div class="menu-header">
+    <div>
+      <div class="section-label">What We Serve</div>
+      <h2 class="section-title">Our <em>Signature</em> Dishes</h2>
+    </div>
+    <div class="menu-tabs">
+      <button class="menu-tab active" onclick="switchTab(this)">All</button>
+      <button class="menu-tab" onclick="switchTab(this)">Mains</button>
+      <button class="menu-tab" onclick="switchTab(this)">Sharing</button>
+      <button class="menu-tab" onclick="switchTab(this)">Sides</button>
+    </div>
+  </div>
+  <div class="menu-grid">
+
+    <!-- Schnitzel — featured -->
+    <div class="menu-card featured">
+      <img src="images/pexels-maxavans-5056823.jpg" alt="Golden Schnitzel">
+      <div class="menu-card-overlay">
+        <div class="menu-card-tag">Chef's Signature</div>
+        <div class="menu-card-name">Golden Schnitzel &amp; Truffle Frites</div>
+        <div class="menu-card-price">KSh 2,400</div>
+      </div>
+      <div class="menu-card-ingredients">
+        <div class="ing-title">Ingredients</div>
+        <ul class="ing-list">
+          <li>Heritage pork loin, hand-tenderised</li>
+          <li>Panko breadcrumbs &amp; free-range egg wash</li>
+          <li>Hand-cut potato frites, sunflower oil</li>
+          <li>Wild rocket, cucumber ribbons, red onion</li>
+          <li>Lemon zest, sea salt, cracked black pepper</li>
+          <li>House mustard &amp; caper aioli</li>
+        </ul>
+        <div class="ing-dish-name">Golden Schnitzel &amp; Truffle Frites</div>
+        <div class="ing-price">KSh 2,400</div>
+      </div>
+    </div>
+
+    <!-- Lasagna -->
+    <div class="menu-card">
+      <img src="images/pexels-readymade-4021955.jpg" alt="Spinach Lasagna">
+      <div class="menu-card-overlay">
+        <div class="menu-card-tag">Vegetarian</div>
+        <div class="menu-card-name">Spinach &amp; Ricotta Lasagna</div>
+        <div class="menu-card-price">KSh 1,950</div>
+      </div>
+      <div class="menu-card-ingredients">
+        <div class="ing-title">Ingredients</div>
+        <ul class="ing-list">
+          <li>Fresh egg pasta sheets</li>
+          <li>Baby spinach &amp; whole-milk ricotta</li>
+          <li>Mozzarella &amp; aged Parmesan</li>
+          <li>House tomato conserva, garlic, basil</li>
+          <li>Fresh rosemary &amp; thyme</li>
+          <li>Extra-virgin olive oil</li>
+        </ul>
+        <div class="ing-dish-name">Spinach &amp; Ricotta Lasagna</div>
+        <div class="ing-price">KSh 1,950</div>
+      </div>
+    </div>
+
+    <!-- Burger -->
+    <div class="menu-card">
+      <img src="images/bagger" alt="Craft Burger">
+      <div class="menu-card-overlay">
+        <div class="menu-card-tag">Grill</div>
+        <div class="menu-card-name">Smash &amp; Cheese Burger</div>
+        <div class="menu-card-price">KSh 2,100</div>
+      </div>
+      <div class="menu-card-ingredients">
+        <div class="ing-title">Ingredients</div>
+        <ul class="ing-list">
+          <li>Double wagyu beef smash patty</li>
+          <li>Aged cheddar &amp; American cheese</li>
+          <li>Sesame-seed brioche bun</li>
+          <li>House pickle &amp; shredded iceberg</li>
+          <li>Spiced ketchup &amp; smoked mayo</li>
+          <li>Seasoned potato wedges &amp; thin frites</li>
+        </ul>
+        <div class="ing-dish-name">Smash &amp; Cheese Burger</div>
+        <div class="ing-price">KSh 2,100</div>
+      </div>
+    </div>
+
+    <!-- Noodle Bowl -->
+    <div class="menu-card">
+      <img src="images/noddle" alt="Glass Noodle Bowl">
+      <div class="menu-card-overlay">
+        <div class="menu-card-tag">Asian Inspired</div>
+        <div class="menu-card-name">Glass Noodle Chicken Bowl</div>
+        <div class="menu-card-price">KSh 1,750</div>
+      </div>
+      <div class="menu-card-ingredients">
+        <div class="ing-title">Ingredients</div>
+        <ul class="ing-list">
+          <li>Rice vermicelli glass noodles</li>
+          <li>Free-range poached chicken thigh</li>
+          <li>Jasmine steamed rice</li>
+          <li>Red chilli, spring onion, bell pepper</li>
+          <li>Ginger-soy broth &amp; sesame oil</li>
+          <li>Fresh coriander garnish</li>
+        </ul>
+        <div class="ing-dish-name">Glass Noodle Chicken Bowl</div>
+        <div class="ing-price">KSh 1,750</div>
+      </div>
+    </div>
+
+  </div>
+  <p class="menu-hint">&#128161; Hover over any dish to reveal its full ingredients</p>
+</section>
+
+<!-- ── SPECIALS ── -->
+<section class="specials reveal" id="specials">
+  <div class="specials-visual">
+    <div class="specials-img-wrap">
+      <img class="specials-img" src="images/spices 3" alt="Artisan Spices">
+    </div>
+  </div>
+  <div class="specials-text">
+    <div class="section-label">This Week</div>
+    <h2 class="section-title">Chef's Weekly<br><em>Specials</em></h2>
+    <div style="margin-top:1.8rem">
+      
+      <div class="special-item">
+        <div class="special-num">01</div>
+        <div><div class="special-name">Saffron Lamb Tagine</div>
+        <div class="special-desc">Slow-braised Kenyan lamb, preserved lemon, medjool dates, flatbread</div></div>
+        <div class="special-price">KSh 3,200</div>
+      </div>
+
+      <div class="special-item">
+        <div class="special-num">02</div>
+        <div><div class="special-name">Smoked Paprika Prawn Pasta</div>
+        <div class="special-desc">Hand-rolled pappardelle, tiger prawns, roasted tomato cream</div></div>
+        <div class="special-price">KSh 2,800</div>
+      </div>
+
+      <div class="special-item">
+        <div class="special-num">03</div>
+        <div><div class="special-name">Sumac Roasted Chicken</div>
+        <div class="special-desc">Spiced yoghurt marinade, wild grain pilaf, pomegranate molasses</div></div>
+        <div class="special-price">KSh 2,500</div>
+      </div>
+      
+      <div class="special-item">
+        <div class="special-num">04</div>
+        <div><div class="special-name">Dark Chocolate Fondant</div>
+        <div class="special-desc">Salted caramel core, cardamom ice cream, honeycomb crumble</div></div>
+        <div class="special-price">KSh 900</div>
+      </div>
+      
+    </div>
+    <a href="#reservation" class="btn-primary" style="margin-top:2rem;display:inline-block">Book to Experience</a>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="testimonials reveal">
+  <div class="section-label" style="justify-content:center">What People Say</div>
+  <h2 class="section-title" style="margin-top:.5rem">Voices from<br><em>Our Table</em></h2>
+  <div class="testimonial-grid">
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+
+      <p class="testimonial-text">The schnitzel was impossibly crispy, the frites perfectly 
+        salted — this is the kind of meal you think about for days afterward.</p>
+
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">G</div>
+        <div><div class="testimonial-name">Godson luvari</div><div class="testimonial-role">Food Writer, Nairobi</div></div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+
+      <p class="testimonial-text">We came for a quiet anniversary dinner. Saffron gave us 
+        an evening we'll never forget — the food, the light, the warmth of the service.</p>
+
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">D</div>
+        <div><div class="testimonial-name">David &amp; Lily Maina</div><div class="testimonial-role">Regular Guests</div></div>
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="testimonial-quote">"</div>
+      <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+
+      <p class="testimonial-text">The spice blends here are extraordinary. As a chef myself, 
+        I left with genuine admiration and several questions for the kitchen team.</p>
+
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">J</div>
+        <div><div class="testimonial-name">James Amboka</div><div class="testimonial-role">Executive Chef, Cape Town</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GALLERY ── -->
+<section class="gallery reveal" id="gallery">
+  <div class="gallery-header">
+    <div class="section-label">Visual Journey</div>
+    <h2 class="section-title">A Feast for<br><em>the Eyes</em></h2>
+  </div>
+  <div class="gallery-scroll">
+    <div class="gallery-item">
+      <img src="images/Schnitzel" alt="Schnitzel">
+
+      <div class="gal-tooltip"><div class="gal-tooltip-name">Golden Schnitzel &amp; Truffle Frites</div>
+      <div class="gal-tooltip-ing">Pork loin &middot; Panko &middot; Potato frites &middot; Rocket &middot; Lemon zest &middot; Caper aioli</div></div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/Spices" alt="Spices">
+      <div class="gal-tooltip"><div class="gal-tooltip-name">Artisan Spice Palette</div>
+      <div class="gal-tooltip-ing">Himalayan salt &middot; Mixed peppercorns &middot; Star anise &middot; Smoked paprika &middot; Coriander &middot; Cinnamon</div></div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/Lasagna" alt="Lasagna">
+      <div class="gal-tooltip"><div class="gal-tooltip-name">Spinach &amp; Ricotta Lasagna</div>
+      <div class="gal-tooltip-ing">Egg pasta &middot; Ricotta &middot; Spinach &middot; Mozzarella &middot; Tomato conserva &middot; Rosemary</div></div>
+    </div>
+    
+    <div class="gallery-item">
+      <img src="images/bagger" alt="Burger">
+      <div class="gal-tooltip"><div class="gal-tooltip-name">Smash &amp; Cheese Burger</div>
+      <div class="gal-tooltip-ing">Wagyu beef &middot; Aged cheddar &middot; Brioche bun &middot; House pickle &middot; Spiced ketchup &middot; Wedges</div></div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/Noodle Bowl" alt="Noodle Bowl">
+      <div class="gal-tooltip"><div class="gal-tooltip-name">Glass Noodle Chicken Bowl</div>
+      <div class="gal-tooltip-ing">Rice vermicelli &middot; Chicken thigh &middot; Jasmine rice &middot; Chilli &middot; Ginger-soy broth &middot; Sesame oil</div></div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/Schnitzel" alt="Schnitzel">
+      <div class="gal-tooltip"><div class="gal-tooltip-name">Golden Schnitzel &amp; Truffle Frites</div>
+      <div class="gal-tooltip-ing">Pork loin &middot; Panko &middot; Potato frites &middot; Rocket &middot; Lemon zest &middot; Caper aioli</div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── RESERVATION ── -->
+<div class="reservation reveal" id="reservation">
+  <div class="reservation-left">
+    <div class="section-label">Book Your Visit</div>
+    <h2 class="section-title">Reserve<br>Your Table</h2>
+    <p>Whether it's a quiet dinner for two or a gathering of friends, we'll ensure every detail is perfect.</p>
+    <div class="reservation-info">
+      <div class="res-info-item"><span class="res-info-icon">&#128336;</span><span class="res-info-text">Tue – Sun: 12pm – 10:30pm</span></div>
+      <div class="res-info-item"><span class="res-info-icon">&#128205;</span><span class="res-info-text">14 Riverside Drive, Westlands, Nairobi</span></div>
+      <div class="res-info-item"><span class="res-info-icon">&#128222;</span><span class="res-info-text">+254 717 077 733</span></div>
+      <div class="res-info-item">
+
+        <span class="res-info-icon">&#128172;</span>
+        <a href="https://wa.me/254717077733?text=Hi%20Saffron%20Bistro!%20I%27d%20like%20to%20make%20a%20reservation." target="_blank" 
+        style="color:var(--dark);font-size:.85rem;font-weight:600;text-decoration:none">WhatsApp: +254 717 077 733</a>
+      </div>
+
+    </div>
+  </div>
+  <div class="reservation-right">
+    <h3>Make a Reservation</h3>
+    <div class="form-row">
+      <div class="form-group"><label>First Name</label><input type="text" placeholder="Godson "></div>
+      <div class="form-group"><label>Last Name</label><input type="text" placeholder="luvari"></div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Date</label><input type="date"></div>
+      <div class="form-group"><label>Time</label>
+        <select>
+          <option>12:00 PM</option><option>1:00 PM</option><option>2:00 PM</option>
+          <option>6:00 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group"><label>Guests</label>
+        <select><option>1 Guest</option><option>2 Guests</option><option>3 Guests</option><option>4 Guests</option><option>5+ Guests</option></select>
+      </div>
+      <div class="form-group"><label>Email</label><input type="email" placeholder="godsonluvari@gmail.com"></div>
+    </div>
+    <div class="form-group"><label>Special Requests</label><textarea placeholder="Allergies, dietary requirements, celebrations…"></textarea></div>
+    <button class="btn-submit" onclick="handleReservation(this)">Confirm Reservation</button>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer id="contact">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">SAFFRON <span>Bistro</span></div>
+      <p class="footer-desc">A contemporary bistro dedicated to honest cooking, thoughtful spice, and genuine hospitality in the heart of Nairobi.</p>
+      <div class="footer-social">
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/Godson_Code_Orbit" target="_blank" rel="noopener noreferrer" class="social-btn ig" title="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/Gody Wailers" target="_blank" rel="noopener noreferrer" class="social-btn fb" title="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+
+        <!-- X / Twitter -->
+        <a href="https://twitter.com/saffronbistro" target="_blank" rel="noopener noreferrer" class="social-btn tw" title="X / Twitter">
+          <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.259 5.629L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+        </a>
+
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@saffronbistro" target="_blank" rel="noopener noreferrer" class="social-btn yt" title="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@saffronbistro" target="_blank" rel="noopener noreferrer" class="social-btn tiktok" title="TikTok">
+          <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/254768987708?text=Hi%20Saffron%20Bistro!%20I%27d%20like%20to%20make%20a%20reservation." target="_blank" rel="noopener noreferrer" class="social-btn wa" title="WhatsApp: +254 717 077 733">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul class="footer-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reservation">Reservations</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Hours</h4>
+      <ul class="footer-links">
+        <li><a href="#">Tue – Fri: 12pm – 3pm</a></li>
+        <li><a href="#">Tue – Sun: 6pm – 10:30pm</a></li>
+        <li><a href="#">Sat – Sun Brunch: 10am – 3pm</a></li>
+        <li><a href="#">Monday: Closed</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-links">
+        <li><a href="https://maps.google.com/?q=14+Riverside+Drive+Westlands+Nairobi" target="_blank">14 Riverside Drive</a></li>
+        <li><a href="https://maps.google.com/?q=Westlands+Nairobi" target="_blank">Westlands, Nairobi</a></li>
+        <li><a href="tel:+254717077733">+254 717 077 733</a></li>
+        <li><a href="https://wa.me/254717077733" target="_blank">WhatsApp: 0717 077 733</a></li>
+        <li><a href="mailto:hello@saffronbistro.ke">hello@saffronbistro.ke</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 Saffron Bistro. All rights reserved.</span>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Allergen Info</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ── FLOATING WHATSAPP BUTTON ── -->
+<a href="https://wa.me/254717077733?text=Hi%20Saffron%20Bistro!%20I%27d%20like%20to%20make%20a%20reservation." target="_blank" rel="noopener noreferrer" class="wa-float" title="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+  <span class="wa-tip">Chat with us on WhatsApp</span>
+</a>
+<script src="script.js"></script>
+</body>
+</html>
